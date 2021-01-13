@@ -1,0 +1,465 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Jan  7 17:37:49 2021
+| Host         : DESKTOP-5S9G7N2 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file arch_top_control_sets_placed.rpt
+| Design       : arch_top
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   387 |
+|    Minimum number of control sets                        |   387 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   838 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   387 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |    16 |
+| >= 14 to < 16      |     5 |
+| >= 16              |   358 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              97 |           45 |
+| No           | No                    | Yes                    |             624 |          226 |
+| No           | Yes                   | No                     |              11 |            5 |
+| Yes          | No                    | No                     |              72 |           35 |
+| Yes          | No                    | Yes                    |           11094 |         5330 |
+| Yes          | Yes                   | No                     |              40 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------+--------------------------------------------------------+-------------------------------+------------------+----------------+--------------+
+|                     Clock Signal                    |                      Enable Signal                     |        Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------------------+--------------------------------------------------------+-------------------------------+------------------+----------------+--------------+
+| ~n_0_13789_BUFG                                     |                                                        | io_manager_inst/aresetn_reg_0 |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG                                      |                                                        | io_manager_inst/aresetn_reg_0 |                1 |              3 |         3.00 |
+| ~cpuclk_BUFG                                        | cpu/datapath/hazard_detector/test_state0               | io_manager_inst/aresetn_reg_0 |                2 |              4 |         2.00 |
+|  cpu/datapath/if_id_reg/inst_out_reg[14]_0[0]       |                                                        |                               |                1 |              4 |         4.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_36   | io_manager_inst/aresetn_reg_0 |                1 |              4 |         4.00 |
+| ~cpuclk_BUFG                                        |                                                        | io_manager_inst/aresetn_reg_0 |                3 |              4 |         1.33 |
+|  cpu/datapath/d_cache/inset_position_reg[1]_i_2_n_3 |                                                        |                               |                3 |              6 |         2.00 |
+|  io_manager_inst/counter_inst/S[0]                  |                                                        | io_manager_inst/aresetn_reg_0 |                5 |             11 |         2.20 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_37   | io_manager_inst/aresetn_reg_0 |                5 |             12 |         2.40 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__10_9    | io_manager_inst/aresetn_reg_0 |                6 |             12 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_26    | io_manager_inst/aresetn_reg_0 |                3 |             12 |         4.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_52    | io_manager_inst/aresetn_reg_0 |                4 |             12 |         3.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_31    | io_manager_inst/aresetn_reg_0 |                4 |             12 |         3.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_51    | io_manager_inst/aresetn_reg_0 |                5 |             12 |         2.40 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_35    | io_manager_inst/aresetn_reg_0 |                8 |             12 |         1.50 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_20    | io_manager_inst/aresetn_reg_0 |                4 |             12 |         3.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__10_8    | io_manager_inst/aresetn_reg_0 |                2 |             12 |         6.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_34    | io_manager_inst/aresetn_reg_0 |                3 |             12 |         4.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_46    | io_manager_inst/aresetn_reg_0 |                3 |             12 |         4.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_41    | io_manager_inst/aresetn_reg_0 |                7 |             12 |         1.71 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_43   | io_manager_inst/aresetn_reg_0 |                6 |             12 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/data__1[1]                     | io_manager_inst/aresetn_reg_0 |                8 |             12 |         1.50 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_23    | io_manager_inst/aresetn_reg_0 |                3 |             12 |         4.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_31    | io_manager_inst/aresetn_reg_0 |                5 |             12 |         2.40 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__10_10   | io_manager_inst/aresetn_reg_0 |                6 |             14 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_47    | io_manager_inst/aresetn_reg_0 |                3 |             14 |         4.67 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_38   | io_manager_inst/aresetn_reg_0 |               10 |             15 |         1.50 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__10_5    | io_manager_inst/aresetn_reg_0 |                5 |             15 |         3.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_21    | io_manager_inst/aresetn_reg_0 |                2 |             15 |         7.50 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_45    | io_manager_inst/aresetn_reg_0 |                6 |             16 |         2.67 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/data__1[0]                     | io_manager_inst/aresetn_reg_0 |               11 |             17 |         1.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_27    | io_manager_inst/aresetn_reg_0 |                5 |             17 |         3.40 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_32    | io_manager_inst/aresetn_reg_0 |                8 |             17 |         2.12 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_53    | io_manager_inst/aresetn_reg_0 |                7 |             18 |         2.57 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_25    | io_manager_inst/aresetn_reg_0 |                9 |             18 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_36    | io_manager_inst/aresetn_reg_0 |               11 |             19 |         1.73 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_37    | io_manager_inst/aresetn_reg_0 |                3 |             19 |         6.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_30    | io_manager_inst/aresetn_reg_0 |               10 |             19 |         1.90 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_42   | io_manager_inst/aresetn_reg_0 |                5 |             19 |         3.80 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_19    | io_manager_inst/aresetn_reg_0 |                7 |             19 |         2.71 |
+|  clk_IBUF_BUFG                                      | io_manager_inst/bdr/buffer[0]_i_1_n_3                  |                               |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG                                      | io_manager_inst/bd0/buffer[0]_i_1__0_n_3               |                               |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG                                      |                                                        |                               |                8 |             23 |         2.88 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_43    | io_manager_inst/aresetn_reg_0 |               10 |             27 |         2.70 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__10_12   | io_manager_inst/aresetn_reg_0 |               14 |             27 |         1.93 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_39    | io_manager_inst/aresetn_reg_0 |               12 |             27 |         2.25 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_40   | io_manager_inst/aresetn_reg_0 |                7 |             27 |         3.86 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__10_6    | io_manager_inst/aresetn_reg_0 |               10 |             27 |         2.70 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_28    | io_manager_inst/aresetn_reg_0 |                8 |             27 |         3.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[5][0][93]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |                7 |             27 |         3.86 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[15][0][93]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               11 |             27 |         2.45 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_34   | io_manager_inst/aresetn_reg_0 |               17 |             27 |         1.59 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[13][0][93]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               13 |             27 |         2.08 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_17    | io_manager_inst/aresetn_reg_0 |               11 |             27 |         2.45 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_29    | io_manager_inst/aresetn_reg_0 |               15 |             27 |         1.80 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_49    | io_manager_inst/aresetn_reg_0 |               11 |             27 |         2.45 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_33    | io_manager_inst/aresetn_reg_0 |                7 |             27 |         3.86 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_55    | io_manager_inst/aresetn_reg_0 |                9 |             27 |         3.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/data__1[3]                     | io_manager_inst/aresetn_reg_0 |               21 |             27 |         1.29 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[0][1][93]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               18 |             28 |         1.56 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[10][1][93]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_10    | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[15][1][93]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_22    | io_manager_inst/aresetn_reg_0 |               15 |             28 |         1.87 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_17    | io_manager_inst/aresetn_reg_0 |                9 |             28 |         3.11 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_7     | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_10    | io_manager_inst/aresetn_reg_0 |               11 |             28 |         2.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_14    | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_15    | io_manager_inst/aresetn_reg_0 |               17 |             28 |         1.65 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[2][1][93]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_0     | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[3][1][93]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[1][1][93]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               11 |             28 |         2.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[14][1][93]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               11 |             28 |         2.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_3     | io_manager_inst/aresetn_reg_0 |                8 |             28 |         3.50 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[15][2][93]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |                9 |             28 |         3.11 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[8][1][93]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               14 |             28 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[9][1][93]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               16 |             28 |         1.75 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[5][1][93]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               10 |             28 |         2.80 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__31_4[0] | io_manager_inst/aresetn_reg_0 |               18 |             28 |         1.56 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__33_0[0] | io_manager_inst/aresetn_reg_0 |               11 |             28 |         2.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__34_0[0] | io_manager_inst/aresetn_reg_0 |                9 |             28 |         3.11 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__6_1[0]  | io_manager_inst/aresetn_reg_0 |               21 |             28 |         1.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__8_2[0]  | io_manager_inst/aresetn_reg_0 |               11 |             28 |         2.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__8_1[0]  | io_manager_inst/aresetn_reg_0 |                8 |             28 |         3.50 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__6_1[0]  | io_manager_inst/aresetn_reg_0 |               14 |             28 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__6_2[0]  | io_manager_inst/aresetn_reg_0 |               17 |             28 |         1.65 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__6_3[0]  | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__6_5[0]  | io_manager_inst/aresetn_reg_0 |               18 |             28 |         1.56 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__6_2[0]  | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__31_2[0] | io_manager_inst/aresetn_reg_0 |               16 |             28 |         1.75 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__34_2[0] | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[5]_rep_1[0]     | io_manager_inst/aresetn_reg_0 |                9 |             28 |         3.11 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__34_1[0] | io_manager_inst/aresetn_reg_0 |               14 |             28 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[5]_rep__31_1[0] | io_manager_inst/aresetn_reg_0 |               16 |             28 |         1.75 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__31_3[0] | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[4][1][93]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               11 |             28 |         2.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[6][1][93]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               11 |             28 |         2.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[7][1][93]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |                6 |             28 |         4.67 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__6_4[0]  | io_manager_inst/aresetn_reg_0 |               20 |             28 |         1.40 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/data[2]                        | io_manager_inst/aresetn_reg_0 |               24 |             28 |         1.17 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_19   | io_manager_inst/aresetn_reg_0 |               10 |             28 |         2.80 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_7    | io_manager_inst/aresetn_reg_0 |               15 |             28 |         1.87 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_6    | io_manager_inst/aresetn_reg_0 |               11 |             28 |         2.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_27   | io_manager_inst/aresetn_reg_0 |                8 |             28 |         3.50 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/p_0_in[2]                      | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_5    | io_manager_inst/aresetn_reg_0 |               19 |             28 |         1.47 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_36[0] | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_35[0] | io_manager_inst/aresetn_reg_0 |               14 |             28 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[10][3][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[15][2][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               16 |             28 |         1.75 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[15][3][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[11][0][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               10 |             28 |         2.80 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[14][2][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               15 |             28 |         1.87 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[1][0][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |                9 |             28 |         3.11 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[12][2][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               14 |             28 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[13][2][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               18 |             28 |         1.56 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[11][1][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               14 |             28 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[1][2][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               14 |             28 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[11][2][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[12][0][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               14 |             28 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[12][3][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               20 |             28 |         1.40 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[13][0][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               10 |             28 |         2.80 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[13][3][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               10 |             28 |         2.80 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[10][2][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               16 |             28 |         1.75 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[13][1][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               14 |             28 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[15][1][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[14][3][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |                9 |             28 |         3.11 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[0][3][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[10][0][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               16 |             28 |         1.75 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[15][0][27]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |                8 |             28 |         3.50 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[8][3][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               20 |             28 |         1.40 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[2][3][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               15 |             28 |         1.87 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[4][3][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               10 |             28 |         2.80 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[7][2][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               14 |             28 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[5][0][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[7][3][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[2][0][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               10 |             28 |         2.80 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[6][0][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               16 |             28 |         1.75 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[2][2][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |                8 |             28 |         3.50 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[4][2][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               16 |             28 |         1.75 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[1][3][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               18 |             28 |         1.56 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[6][3][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               11 |             28 |         2.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[3][2][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               20 |             28 |         1.40 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[9][0][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               18 |             28 |         1.56 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[3][0][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               14 |             28 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[6][2][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               14 |             28 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[9][3][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               16 |             28 |         1.75 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[3][3][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               10 |             28 |         2.80 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[5][3][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               15 |             28 |         1.87 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[9][2][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               18 |             28 |         1.56 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[4][0][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/addr[7][0][27]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               15 |             28 |         1.87 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_8    | io_manager_inst/aresetn_reg_0 |               17 |             28 |         1.65 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_31   | io_manager_inst/aresetn_reg_0 |               18 |             28 |         1.56 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_23   | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__10_1    | io_manager_inst/aresetn_reg_0 |               10 |             28 |         2.80 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[11][1][93]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               14 |             28 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_1     | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__9_10    | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_0     | io_manager_inst/aresetn_reg_0 |               11 |             28 |         2.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_13    | io_manager_inst/aresetn_reg_0 |               11 |             28 |         2.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_17    | io_manager_inst/aresetn_reg_0 |               15 |             28 |         1.87 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__10_3    | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__10_6    | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__9_6     | io_manager_inst/aresetn_reg_0 |               10 |             28 |         2.80 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_4     | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[12][1][93]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               12 |             28 |         2.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_3     | io_manager_inst/aresetn_reg_0 |               10 |             28 |         2.80 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[13][1][93]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               13 |             28 |         2.15 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_2     | io_manager_inst/aresetn_reg_0 |               11 |             28 |         2.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_13    | io_manager_inst/aresetn_reg_0 |               11 |             28 |         2.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[15][2][124]_i_1_n_3          | io_manager_inst/aresetn_reg_0 |               15 |             29 |         1.93 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/data[3]                        | io_manager_inst/aresetn_reg_0 |               21 |             29 |         1.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_11    | io_manager_inst/aresetn_reg_0 |               16 |             29 |         1.81 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/p_0_in[1]                      | io_manager_inst/aresetn_reg_0 |               10 |             31 |         3.10 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_4    | io_manager_inst/aresetn_reg_0 |               15 |             31 |         2.07 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_16    | io_manager_inst/aresetn_reg_0 |               17 |             31 |         1.82 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_9     | io_manager_inst/aresetn_reg_0 |               13 |             31 |         2.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_6     | io_manager_inst/aresetn_reg_0 |               13 |             31 |         2.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_33    | io_manager_inst/aresetn_reg_0 |               14 |             31 |         2.21 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_24    | io_manager_inst/aresetn_reg_0 |               11 |             31 |         2.82 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_23    | io_manager_inst/aresetn_reg_0 |               15 |             31 |         2.07 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_18    | io_manager_inst/aresetn_reg_0 |               11 |             31 |         2.82 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_22    | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_4     | io_manager_inst/aresetn_reg_0 |               18 |             31 |         1.72 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_7     | io_manager_inst/aresetn_reg_0 |                9 |             31 |         3.44 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_16    | io_manager_inst/aresetn_reg_0 |               14 |             31 |         2.21 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[5][1][62]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               14 |             31 |         2.21 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_9     | io_manager_inst/aresetn_reg_0 |               15 |             31 |         2.07 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_2     | io_manager_inst/aresetn_reg_0 |               16 |             31 |         1.94 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_30    | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_28    | io_manager_inst/aresetn_reg_0 |               13 |             31 |         2.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/data__1[4]                     | io_manager_inst/aresetn_reg_0 |               26 |             31 |         1.19 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_20    | io_manager_inst/aresetn_reg_0 |               15 |             31 |         2.07 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/data[1]                        | io_manager_inst/aresetn_reg_0 |               20 |             31 |         1.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_44    | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/data__1[2]                     | io_manager_inst/aresetn_reg_0 |               22 |             31 |         1.41 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[8][1][62]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               14 |             31 |         2.21 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/p_0_in[3]                      | io_manager_inst/aresetn_reg_0 |               19 |             31 |         1.63 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_0    | io_manager_inst/aresetn_reg_0 |               23 |             31 |         1.35 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_48    | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_24    | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[6][1][62]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               14 |             31 |         2.21 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[11][1][62]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               15 |             31 |         2.07 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_40    | io_manager_inst/aresetn_reg_0 |               14 |             31 |         2.21 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_18    | io_manager_inst/aresetn_reg_0 |               13 |             31 |         2.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[0][1][62]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               25 |             31 |         1.24 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_25    | io_manager_inst/aresetn_reg_0 |               16 |             31 |         1.94 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[13][1][62]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               14 |             31 |         2.21 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_24   | io_manager_inst/aresetn_reg_0 |               17 |             31 |         1.82 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[10][1][62]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               14 |             31 |         2.21 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[15][2][62]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[12][1][62]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               16 |             31 |         1.94 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[13][0][62]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |                8 |             31 |         3.88 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_30   | io_manager_inst/aresetn_reg_0 |               22 |             31 |         1.41 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_7     | io_manager_inst/aresetn_reg_0 |               13 |             31 |         2.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_28   | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[15][1][62]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_6     | io_manager_inst/aresetn_reg_0 |               13 |             31 |         2.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_34    | io_manager_inst/aresetn_reg_0 |               11 |             31 |         2.82 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[2][1][62]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               18 |             31 |         1.72 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[3][1][62]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_38    | io_manager_inst/aresetn_reg_0 |               16 |             31 |         1.94 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_0     | io_manager_inst/aresetn_reg_0 |               16 |             31 |         1.94 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_39   | io_manager_inst/aresetn_reg_0 |               18 |             31 |         1.72 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_14    | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_22   | io_manager_inst/aresetn_reg_0 |                9 |             31 |         3.44 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_29    | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_11   | io_manager_inst/aresetn_reg_0 |               17 |             31 |         1.82 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_32   | io_manager_inst/aresetn_reg_0 |               24 |             31 |         1.29 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_20   | io_manager_inst/aresetn_reg_0 |               15 |             31 |         2.07 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_2    | io_manager_inst/aresetn_reg_0 |               14 |             31 |         2.21 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_3     | io_manager_inst/aresetn_reg_0 |               13 |             31 |         2.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_3    | io_manager_inst/aresetn_reg_0 |               15 |             31 |         2.07 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_27    | io_manager_inst/aresetn_reg_0 |               16 |             31 |         1.94 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_41   | io_manager_inst/aresetn_reg_0 |               11 |             31 |         2.82 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[1][1][62]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               14 |             31 |         2.21 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[4][1][62]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               17 |             31 |         1.82 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_21    | io_manager_inst/aresetn_reg_0 |                9 |             31 |         3.44 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[7][1][62]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               16 |             31 |         1.94 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__10_11   | io_manager_inst/aresetn_reg_0 |                9 |             31 |         3.44 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_26    | io_manager_inst/aresetn_reg_0 |               20 |             31 |         1.55 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_21    | io_manager_inst/aresetn_reg_0 |               15 |             31 |         2.07 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__10_7    | io_manager_inst/aresetn_reg_0 |               13 |             31 |         2.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__10_2    | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_12   | io_manager_inst/aresetn_reg_0 |               17 |             31 |         1.82 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_23    | io_manager_inst/aresetn_reg_0 |                9 |             31 |         3.44 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__9_9     | io_manager_inst/aresetn_reg_0 |                7 |             31 |         4.43 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_33   | io_manager_inst/aresetn_reg_0 |               17 |             31 |         1.82 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_6     | io_manager_inst/aresetn_reg_0 |               13 |             31 |         2.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__10_2    | io_manager_inst/aresetn_reg_0 |               16 |             31 |         1.94 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_10    | io_manager_inst/aresetn_reg_0 |               13 |             31 |         2.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_9     | io_manager_inst/aresetn_reg_0 |               11 |             31 |         2.82 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__9_7     | io_manager_inst/aresetn_reg_0 |               16 |             31 |         1.94 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__10_7    | io_manager_inst/aresetn_reg_0 |               15 |             31 |         2.07 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_12    | io_manager_inst/aresetn_reg_0 |               10 |             31 |         3.10 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_14    | io_manager_inst/aresetn_reg_0 |                9 |             31 |         3.44 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_9    | io_manager_inst/aresetn_reg_0 |               24 |             31 |         1.29 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_56    | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_16    | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__10_5    | io_manager_inst/aresetn_reg_0 |               11 |             31 |         2.82 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[15][0][62]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |                8 |             31 |         3.88 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_54    | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__9_12    | io_manager_inst/aresetn_reg_0 |               16 |             31 |         1.94 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_13    | io_manager_inst/aresetn_reg_0 |               14 |             31 |         2.21 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_10   | io_manager_inst/aresetn_reg_0 |               13 |             31 |         2.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__9_3     | io_manager_inst/aresetn_reg_0 |               15 |             31 |         2.07 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_18   | io_manager_inst/aresetn_reg_0 |                8 |             31 |         3.88 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_26   | io_manager_inst/aresetn_reg_0 |                9 |             31 |         3.44 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__9_1     | io_manager_inst/aresetn_reg_0 |               12 |             31 |         2.58 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__9_11    | io_manager_inst/aresetn_reg_0 |               13 |             31 |         2.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__9_5     | io_manager_inst/aresetn_reg_0 |               13 |             31 |         2.38 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[14][1][62]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               16 |             31 |         1.94 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_18    | io_manager_inst/aresetn_reg_0 |               15 |             31 |         2.07 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[5][0][62]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |                9 |             31 |         3.44 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_32    | io_manager_inst/aresetn_reg_0 |               15 |             31 |         2.07 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[9][1][62]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               16 |             31 |         1.94 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_11    | io_manager_inst/aresetn_reg_0 |               14 |             31 |         2.21 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_50    | io_manager_inst/aresetn_reg_0 |                7 |             31 |         4.43 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_42    | io_manager_inst/aresetn_reg_0 |               11 |             31 |         2.82 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_35   | io_manager_inst/aresetn_reg_0 |               18 |             31 |         1.72 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_12    | io_manager_inst/aresetn_reg_0 |               18 |             31 |         1.72 |
+|  n_1_12948_BUFG                                     |                                                        |                               |               21 |             32 |         1.52 |
+|  n_2_12292_BUFG                                     |                                                        |                               |               12 |             32 |         2.67 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[2][1][127]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               13 |             32 |         2.46 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_5     | io_manager_inst/aresetn_reg_0 |               13 |             32 |         2.46 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_8     | io_manager_inst/aresetn_reg_0 |               24 |             32 |         1.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/E[0]                           |                               |               25 |             32 |         1.28 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/data[0]                        | io_manager_inst/aresetn_reg_0 |               21 |             32 |         1.52 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/p_0_in[0]                      | io_manager_inst/aresetn_reg_0 |               17 |             32 |         1.88 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[0][1][127]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               28 |             32 |         1.14 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[0][1][31]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               24 |             32 |         1.33 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[10][1][31]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               16 |             32 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[12][1][127]_i_1_n_3          | io_manager_inst/aresetn_reg_0 |               17 |             32 |         1.88 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[12][1][31]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               12 |             32 |         2.67 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[13][1][31]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               15 |             32 |         2.13 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[10][1][127]_i_1_n_3          | io_manager_inst/aresetn_reg_0 |               16 |             32 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[11][1][31]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               16 |             32 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[14][1][127]_i_1_n_3          | io_manager_inst/aresetn_reg_0 |               14 |             32 |         2.29 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[13][1][127]_i_1_n_3          | io_manager_inst/aresetn_reg_0 |               16 |             32 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[11][1][127]_i_1_n_3          | io_manager_inst/aresetn_reg_0 |               16 |             32 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[1][1][31]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               14 |             32 |         2.29 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[2][1][31]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               15 |             32 |         2.13 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[15][2][31]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               18 |             32 |         1.78 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[15][1][127]_i_1_n_3          | io_manager_inst/aresetn_reg_0 |               15 |             32 |         2.13 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_16   | io_manager_inst/aresetn_reg_0 |               23 |             32 |         1.39 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[14][1][31]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               13 |             32 |         2.46 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_25   | io_manager_inst/aresetn_reg_0 |               21 |             32 |         1.52 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_13   | io_manager_inst/aresetn_reg_0 |               30 |             32 |         1.07 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[7][1][127]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               18 |             32 |         1.78 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[7][1][31]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               12 |             32 |         2.67 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[6][1][127]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               20 |             32 |         1.60 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[4][1][31]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               17 |             32 |         1.88 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_15   | io_manager_inst/aresetn_reg_0 |               14 |             32 |         2.29 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__10_3    | io_manager_inst/aresetn_reg_0 |               13 |             32 |         2.46 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_21   | io_manager_inst/aresetn_reg_0 |               17 |             32 |         1.88 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_11    | io_manager_inst/aresetn_reg_0 |               10 |             32 |         3.20 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_15    | io_manager_inst/aresetn_reg_0 |               11 |             32 |         2.91 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_14   | io_manager_inst/aresetn_reg_0 |               12 |             32 |         2.67 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_17   | io_manager_inst/aresetn_reg_0 |               11 |             32 |         2.91 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/flag                              | io_manager_inst/aresetn_reg_0 |                7 |             32 |         4.57 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__9_4     | io_manager_inst/aresetn_reg_0 |               19 |             32 |         1.68 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[6]_rep__9_8     | io_manager_inst/aresetn_reg_0 |               19 |             32 |         1.68 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__10_0    | io_manager_inst/aresetn_reg_0 |               17 |             32 |         1.88 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[8][1][31]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               21 |             32 |         1.52 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_20    | io_manager_inst/aresetn_reg_0 |               15 |             32 |         2.13 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[6][1][31]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               15 |             32 |         2.13 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_19    | io_manager_inst/aresetn_reg_0 |               13 |             32 |         2.46 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[9][1][127]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               23 |             32 |         1.39 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_15    | io_manager_inst/aresetn_reg_0 |               23 |             32 |         1.39 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[15][1][31]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               17 |             32 |         1.88 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[9][1][31]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               26 |             32 |         1.23 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[4]_rep__37_29   | io_manager_inst/aresetn_reg_0 |               21 |             32 |         1.52 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[8][1][127]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               20 |             32 |         1.60 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[4][1][127]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               17 |             32 |         1.88 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_8     | io_manager_inst/aresetn_reg_0 |               14 |             32 |         2.29 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[5][1][31]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               15 |             32 |         2.13 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[3][1][31]_i_1_n_3            | io_manager_inst/aresetn_reg_0 |               14 |             32 |         2.29 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_2     | io_manager_inst/aresetn_reg_0 |               19 |             32 |         1.68 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[1][1][127]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               15 |             32 |         2.13 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[3][1][127]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               16 |             32 |         2.00 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_8     | io_manager_inst/aresetn_reg_0 |               21 |             32 |         1.52 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_1     | io_manager_inst/aresetn_reg_0 |               14 |             32 |         2.29 |
+|  n_0_13789_BUFG                                     | cpu/datapath/d_cache/data[5][1][127]_i_1_n_3           | io_manager_inst/aresetn_reg_0 |               15 |             32 |         2.13 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__10_4    | io_manager_inst/aresetn_reg_0 |               17 |             32 |         1.88 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__9_5     | io_manager_inst/aresetn_reg_0 |               18 |             32 |         1.78 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_4     | io_manager_inst/aresetn_reg_0 |               18 |             32 |         1.78 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_22    | io_manager_inst/aresetn_reg_0 |               17 |             32 |         1.88 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/sgn_out_reg[MemtoReg][1]_12    | io_manager_inst/aresetn_reg_0 |               21 |             32 |         1.52 |
+|  n_0_13789_BUFG                                     | cpu/datapath/ex_mem_reg/ALUOut_out_reg[7]_rep__8_19    | io_manager_inst/aresetn_reg_0 |               13 |             32 |         2.46 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_8[0]     | io_manager_inst/aresetn_reg_0 |               26 |             32 |         1.23 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_7[0]     | io_manager_inst/aresetn_reg_0 |               25 |             32 |         1.28 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_6[0]     | io_manager_inst/aresetn_reg_0 |               23 |             32 |         1.39 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_9[0]     | io_manager_inst/aresetn_reg_0 |               22 |             32 |         1.45 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_0[0]     | io_manager_inst/aresetn_reg_0 |               18 |             32 |         1.78 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_1[0]     | io_manager_inst/aresetn_reg_0 |               17 |             32 |         1.88 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_10[0]    | io_manager_inst/aresetn_reg_0 |               16 |             32 |         2.00 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_11[0]    | io_manager_inst/aresetn_reg_0 |               20 |             32 |         1.60 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_12[0]    | io_manager_inst/aresetn_reg_0 |               16 |             32 |         2.00 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_13[0]    | io_manager_inst/aresetn_reg_0 |               19 |             32 |         1.68 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_29[0]    | io_manager_inst/aresetn_reg_0 |               19 |             32 |         1.68 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_23[0]    | io_manager_inst/aresetn_reg_0 |               20 |             32 |         1.60 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_25[0]    | io_manager_inst/aresetn_reg_0 |               18 |             32 |         1.78 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_26[0]    | io_manager_inst/aresetn_reg_0 |               18 |             32 |         1.78 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_30[0]    | io_manager_inst/aresetn_reg_0 |               25 |             32 |         1.28 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_18[0]    | io_manager_inst/aresetn_reg_0 |               18 |             32 |         1.78 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_4[0]     | io_manager_inst/aresetn_reg_0 |               19 |             32 |         1.68 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_5[0]     | io_manager_inst/aresetn_reg_0 |               24 |             32 |         1.33 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_3[0]     | io_manager_inst/aresetn_reg_0 |               18 |             32 |         1.78 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_2[0]     | io_manager_inst/aresetn_reg_0 |               17 |             32 |         1.88 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_15[0]    | io_manager_inst/aresetn_reg_0 |               15 |             32 |         2.13 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_16[0]    | io_manager_inst/aresetn_reg_0 |               22 |             32 |         1.45 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_17[0]    | io_manager_inst/aresetn_reg_0 |               15 |             32 |         2.13 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_22[0]    | io_manager_inst/aresetn_reg_0 |               20 |             32 |         1.60 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_20[0]    | io_manager_inst/aresetn_reg_0 |               17 |             32 |         1.88 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_14[0]    | io_manager_inst/aresetn_reg_0 |               23 |             32 |         1.39 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_19[0]    | io_manager_inst/aresetn_reg_0 |               18 |             32 |         1.78 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_27[0]    | io_manager_inst/aresetn_reg_0 |               19 |             32 |         1.68 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_21[0]    | io_manager_inst/aresetn_reg_0 |               20 |             32 |         1.60 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_24[0]    | io_manager_inst/aresetn_reg_0 |               22 |             32 |         1.45 |
+|  cpuclk_BUFG                                        | cpu/datapath/mem_wb_reg/sgn_out_reg[RegWrite]_28[0]    | io_manager_inst/aresetn_reg_0 |               19 |             32 |         1.68 |
+|  cpuclk_BUFG                                        |                                                        | io_manager_inst/aresetn_reg_0 |                9 |             36 |         4.00 |
+|  clk_IBUF_BUFG                                      | io_manager_inst/bdr/reset_cnt                          | io_manager_inst/reset_down    |               10 |             40 |         4.00 |
+|  cpuclk_BUFG                                        | cpu/datapath/hazard_detector/p_0_in                    | io_manager_inst/aresetn_reg_0 |               31 |             97 |         3.13 |
+|  cpuclk_BUFG                                        | cpu/datapath/d_cache/p_0_in                            | io_manager_inst/aresetn_reg_0 |              144 |            423 |         2.94 |
+|  n_0_13789_BUFG                                     |                                                        | io_manager_inst/aresetn_reg_0 |              212 |            579 |         2.73 |
++-----------------------------------------------------+--------------------------------------------------------+-------------------------------+------------------+----------------+--------------+
+
+

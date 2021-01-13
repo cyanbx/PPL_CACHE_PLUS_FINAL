@@ -1,0 +1,11 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ba771ba79e34d5b8bd8126aade9e197 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L dist_mem_gen_v8_0_13 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_test_behav xil_defaultlib.CPU_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'data_in' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sim_1/new/CPU_test.v:72]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'rd_out' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/Datapath.sv:273]
+WARNING: [VRFC 10-5021] port 'debug_option' is not connected on this instance [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sim_1/new/CPU_test.v:66]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

@@ -1,0 +1,424 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan  7 11:07:39 2021
+# Process ID: 15872
+# Current directory: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15224 C:\Cyanbox\curriculum\arch\RISC-V_lab\PPL_CACHE_PLUS_changesize\ArchTestUtils.xpr
+# Log file: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/vivado.log
+# Journal file: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 1007.605 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jan  7 11:10:45 2021] Launched synth_1...
+Run output will be captured here: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/synth_1/runme.log
+[Thu Jan  7 11:10:46 2021] Launched impl_1...
+Run output will be captured here: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1007.605 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD2F37A
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2349.762 ; gain = 1342.156
+set_property PROGRAM.FILE {C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/impl_1/arch_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/impl_1/arch_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.173 . Memory (MB): peak = 2713.996 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2232 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3449.801 ; gain = 15.707
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3449.801 ; gain = 15.707
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3449.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:48 ; elapsed = 00:00:36 . Memory (MB): peak = 3605.684 ; gain = 1181.984
+open_report: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3720.938 ; gain = 101.512
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/MemoryCore.mif'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/Lab4_DATATEST.coe'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/blk_mem.mif'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/Lab4_RISCV.coe'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/lab3-2_data.coe'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/LAB1_riscv.coe'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/Lab2-riscv.coe'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/LAB3_riscv.coe'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/lab3-2_riscv_inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj CPU_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/ip/Memory_core/sim/Memory_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/ip/inst_rom/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/util_src/ADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/util_src/ALUCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/util_src/ImmDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/util_src/MUX2T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/MUX4T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/util_src/PCCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/util_src/REG32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/ALUOut_SHIFT.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUOut_SHIFT
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/Datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/Decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/EX_MEM_REG.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM_REG
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/HazardDetector.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HazardDetector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/ID_EX_REG.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX_REG
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/IF_ID_REG.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID_REG
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/LatencyMemoryVon.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LatencyMemoryVon
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/MEM_WB_REG.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_REG
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/PPL_RV32I.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PPL_RV32I
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/Reg_.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sim_1/new/CPU_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_test
+INFO: [VRFC 10-2458] undeclared symbol data_in, assumed default net type wire [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sim_1/new/CPU_test.v:72]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim'
+"xelab -wto 9ba771ba79e34d5b8bd8126aade9e197 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L dist_mem_gen_v8_0_13 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_test_behav xil_defaultlib.CPU_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ba771ba79e34d5b8bd8126aade9e197 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L dist_mem_gen_v8_0_13 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_test_behav xil_defaultlib.CPU_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'data_in' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sim_1/new/CPU_test.v:72]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'rd_out' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/Datapath.sv:267]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_ALUOut_SHIFT_sv
+Compiling module xil_defaultlib.MUX4T1_32
+Compiling module xil_defaultlib.REG32
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.IF_ID_REG
+Compiling module xil_defaultlib.Reg_
+Compiling module xil_defaultlib.ImmDecoder
+Compiling module xil_defaultlib.ALUCtrl
+Compiling module xil_defaultlib.Decoder
+Compiling module xil_defaultlib.ID_EX_REG
+Compiling module xil_defaultlib.MUX2T1_32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_MEM_REG
+Compiling module xil_defaultlib.PCCtrl
+Compiling module xil_defaultlib.ALUOut_SHIFT
+Compiling module xil_defaultlib.Cache_default
+Compiling module xil_defaultlib.MEM_WB_REG
+Compiling module xil_defaultlib.HazardDetector
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.PPL_RV32I
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.inst_rom
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.Memory_core
+Compiling module xil_defaultlib.LatencyMemoryVon
+Compiling module xil_defaultlib.CPU_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_test_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/xsim.dir/CPU_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/xsim.dir/CPU_test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Jan  7 11:52:07 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 116.461 ; gain = 17.688
+INFO: [Common 17-206] Exiting Webtalk at Thu Jan  7 11:52:07 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 4142.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_test_behav -key {Behavioral:sim_1:Functional:CPU_test} -tclbatch {CPU_test.tcl} -view {C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/CPU_test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/CPU_test_behav.wcfg
+source CPU_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Block Memory Generator module CPU_test.memory.memcore.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 4198.879 ; gain = 56.465
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:27 . Memory (MB): peak = 4198.879 ; gain = 56.465
+update_compile_order -fileset sources_1
+run 300 us
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 4208.387 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/MemoryCore.mif'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/Lab4_DATATEST.coe'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/blk_mem.mif'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/Lab4_RISCV.coe'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/lab3-2_data.coe'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/LAB1_riscv.coe'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/Lab2-riscv.coe'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/LAB3_riscv.coe'
+INFO: [SIM-utils-43] Exported 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim/lab3-2_riscv_inst.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj CPU_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/Cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Cache
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim'
+"xelab -wto 9ba771ba79e34d5b8bd8126aade9e197 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L dist_mem_gen_v8_0_13 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_test_behav xil_defaultlib.CPU_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ba771ba79e34d5b8bd8126aade9e197 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L dist_mem_gen_v8_0_13 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_test_behav xil_defaultlib.CPU_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'data_in' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sim_1/new/CPU_test.v:72]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'rd_out' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.srcs/sources_1/new/Datapath.sv:267]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_ALUOut_SHIFT_sv
+Compiling module xil_defaultlib.MUX4T1_32
+Compiling module xil_defaultlib.REG32
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.IF_ID_REG
+Compiling module xil_defaultlib.Reg_
+Compiling module xil_defaultlib.ImmDecoder
+Compiling module xil_defaultlib.ALUCtrl
+Compiling module xil_defaultlib.Decoder
+Compiling module xil_defaultlib.ID_EX_REG
+Compiling module xil_defaultlib.MUX2T1_32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_MEM_REG
+Compiling module xil_defaultlib.PCCtrl
+Compiling module xil_defaultlib.ALUOut_SHIFT
+Compiling module xil_defaultlib.Cache_default
+Compiling module xil_defaultlib.MEM_WB_REG
+Compiling module xil_defaultlib.HazardDetector
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.PPL_RV32I
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.inst_rom
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.Memory_core
+Compiling module xil_defaultlib.LatencyMemoryVon
+Compiling module xil_defaultlib.CPU_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_test_behav -key {Behavioral:sim_1:Functional:CPU_test} -tclbatch {CPU_test.tcl} -view {C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/CPU_test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/CPU_test_behav.wcfg
+source CPU_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Block Memory Generator module CPU_test.memory.memcore.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4212.523 ; gain = 4.137
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 4212.523 ; gain = 4.137
+run 300 us
+current_wave_config {CPU_test_behav.wcfg}
+CPU_test_behav.wcfg
+add_wave {{/CPU_test/uut/datapath/d_cache/addr}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4214.707 ; gain = 0.000
+run 300 us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Block Memory Generator module CPU_test.memory.memcore.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jan  7 13:13:23 2021] Launched synth_1...
+Run output will be captured here: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/synth_1/runme.log
+[Thu Jan  7 13:13:23 2021] Launched impl_1...
+Run output will be captured here: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/impl_1/arch_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jan  7 13:28:55 2021] Launched synth_1...
+Run output will be captured here: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/synth_1/runme.log
+[Thu Jan  7 13:28:55 2021] Launched impl_1...
+Run output will be captured here: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jan  7 13:30:01 2021] Launched synth_1...
+Run output will be captured here: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/synth_1/runme.log
+[Thu Jan  7 13:30:01 2021] Launched impl_1...
+Run output will be captured here: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/impl_1/arch_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.234 . Memory (MB): peak = 4252.715 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4290 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4252.715 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4252.715 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:07 . Memory (MB): peak = 4252.715 ; gain = 24.039
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  7 13:43:30 2021...

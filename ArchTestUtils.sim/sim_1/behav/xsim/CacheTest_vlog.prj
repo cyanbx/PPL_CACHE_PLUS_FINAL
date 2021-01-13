@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ArchTestUtils.srcs/sources_1/ip/blk_mem/sim/blk_mem.v" \
+"../../../../ArchTestUtils.srcs/sources_1/ip/CacheL1Storage/sim/CacheL1Storage.v" \
+"../../../../ArchTestUtils.srcs/sources_1/new/LatencyMemory.v" \
+"../../../../ArchTestUtils.srcs/sources_1/new/MUX2T1.v" \
+"../../../../util_src/MUX2T1_32.v" \
+
+sv xil_defaultlib  \
+"../../../../ArchTestUtils.srcs/sources_1/new/CacheL1.sv" \
+"../../../../ArchTestUtils.srcs/sim_1/new/CacheTest.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

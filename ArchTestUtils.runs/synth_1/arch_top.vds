@@ -1,0 +1,552 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan  7 17:33:27 2021
+# Process ID: 9852
+# Current directory: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.runs/synth_1
+# Command line: vivado.exe -log arch_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arch_top.tcl
+# Log file: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.runs/synth_1/arch_top.vds
+# Journal file: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source arch_top.tcl -notrace
+Command: synth_design -top arch_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13116
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1010.012 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arch_top' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/arch_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX2T1' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/MUX2T1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2T1' (1#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/MUX2T1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PPL_RV32I' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/PPL_RV32I.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Datapath' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/Datapath.sv:32]
+INFO: [Synth 8-6157] synthesizing module 'MUX4T1_32' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/MUX4T1_32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX4T1_32' (2#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/MUX4T1_32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'REG32' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/REG32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'REG32' (3#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/REG32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ADD' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/ADD.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ADD' (4#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/ADD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID_REG' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/IF_ID_REG.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID_REG' (5#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/IF_ID_REG.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Reg_' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/Reg_.sv:23]
+WARNING: [Synth 8-567] referenced signal 'register' should be on the sensitivity list [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/Reg_.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_' (6#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/Reg_.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/Decoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ImmDecoder' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/ImmDecoder.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/ImmDecoder.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'ImmDecoder' (7#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/ImmDecoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALUCtrl' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/ALUCtrl.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/ALUCtrl.v:63]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/ALUCtrl.v:75]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/ALUCtrl.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'ALUCtrl' (8#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/ALUCtrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (9#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/Decoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX_REG' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/ID_EX_REG.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX_REG' (10#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/ID_EX_REG.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX2T1_32' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/MUX2T1_32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2T1_32' (11#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/MUX2T1_32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/ALU.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (12#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM_REG' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/EX_MEM_REG.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM_REG' (13#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/EX_MEM_REG.sv:23]
+WARNING: [Synth 8-689] width (5) of port connection 'rd_out' does not match port width (32) of module 'EX_MEM_REG' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/Datapath.sv:273]
+INFO: [Synth 8-6157] synthesizing module 'PCCtrl' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/PCCtrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PCCtrl' (14#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/PCCtrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALUOut_SHIFT' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/ALUOut_SHIFT.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALUOut_SHIFT' (15#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/ALUOut_SHIFT.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Cache' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/Cache.sv:23]
+	Parameter STORAGE_SIZE_LOG bound to: 6 - type: integer 
+	Parameter WAY_NUM_LOG bound to: 2 - type: integer 
+	Parameter BLOCK_SIZE_LOG bound to: 7 - type: integer 
+	Parameter BLOCK_SIZE bound to: 128 - type: integer 
+	Parameter SET_NUM_LOG bound to: 4 - type: integer 
+	Parameter STORAGE_SIZE bound to: 64 - type: integer 
+	Parameter WAY_NUM bound to: 4 - type: integer 
+	Parameter SET_NUM bound to: 16 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter BACK bound to: 1 - type: integer 
+	Parameter BACK_WAIT bound to: 2 - type: integer 
+	Parameter FILL bound to: 3 - type: integer 
+	Parameter FILL_WAIT bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/Cache.sv:149]
+INFO: [Synth 8-6155] done synthesizing module 'Cache' (16#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/Cache.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB_REG' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/MEM_WB_REG.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB_REG' (17#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/MEM_WB_REG.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'HazardDetector' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/HazardDetector.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'HazardDetector' (18#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/HazardDetector.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath' (19#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/Datapath.sv:32]
+INFO: [Synth 8-6155] done synthesizing module 'PPL_RV32I' (20#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/PPL_RV32I.sv:23]
+WARNING: [Synth 8-7071] port 'chip_debug_in' of module 'PPL_RV32I' is unconnected for instance 'cpu' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/arch_top.sv:92]
+WARNING: [Synth 8-7071] port 'cache_req_addr_out' of module 'PPL_RV32I' is unconnected for instance 'cpu' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/arch_top.sv:92]
+WARNING: [Synth 8-7071] port 'cache_req_data_out' of module 'PPL_RV32I' is unconnected for instance 'cpu' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/arch_top.sv:92]
+WARNING: [Synth 8-7071] port 'cache_req_wen_out' of module 'PPL_RV32I' is unconnected for instance 'cpu' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/arch_top.sv:92]
+WARNING: [Synth 8-7071] port 'cache_req_valid_out' of module 'PPL_RV32I' is unconnected for instance 'cpu' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/arch_top.sv:92]
+WARNING: [Synth 8-7071] port 'cache_resp_data_out' of module 'PPL_RV32I' is unconnected for instance 'cpu' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/arch_top.sv:92]
+WARNING: [Synth 8-7071] port 'cache_resp_stall_out' of module 'PPL_RV32I' is unconnected for instance 'cpu' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/arch_top.sv:92]
+WARNING: [Synth 8-7023] instance 'cpu' of module 'PPL_RV32I' has 39 connections declared, but only 32 given [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/arch_top.sv:92]
+INFO: [Synth 8-6157] synthesizing module 'io_manager' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/io_manager.sv:127]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/io_manager.sv:112]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (21#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/io_manager.sv:112]
+INFO: [Synth 8-6157] synthesizing module 'button_debouncer' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/io_manager.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'button_debouncer' (22#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/io_manager.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_shape' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/io_manager.sv:52]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_shape' (23#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/io_manager.sv:52]
+INFO: [Synth 8-6157] synthesizing module 'segnum_manager' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/io_manager.sv:80]
+INFO: [Synth 8-6155] done synthesizing module 'segnum_manager' (24#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/io_manager.sv:80]
+INFO: [Synth 8-6155] done synthesizing module 'io_manager' (25#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/io_manager.sv:127]
+WARNING: [Synth 8-689] width (128) of port connection 'debug2' does not match port width (32) of module 'io_manager' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/arch_top.sv:156]
+INFO: [Synth 8-6157] synthesizing module 'inst_rom' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.runs/synth_1/.Xil/Vivado-9852-DESKTOP-5S9G7N2/realtime/inst_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_rom' (26#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.runs/synth_1/.Xil/Vivado-9852-DESKTOP-5S9G7N2/realtime/inst_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'LatencyMemoryVon' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/LatencyMemoryVon.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Memory_core' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.runs/synth_1/.Xil/Vivado-9852-DESKTOP-5S9G7N2/realtime/Memory_core_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Memory_core' (27#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.runs/synth_1/.Xil/Vivado-9852-DESKTOP-5S9G7N2/realtime/Memory_core_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'LatencyMemoryVon' (28#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/LatencyMemoryVon.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'arch_top' (29#1) [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/arch_top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1027.449 ; gain = 17.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1027.449 ; gain = 17.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1027.449 ; gain = 17.438
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1027.449 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/ip/inst_rom/inst_rom/inst_rom_in_context.xdc] for cell 'inst_rom_instance'
+Finished Parsing XDC File [c:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/ip/inst_rom/inst_rom/inst_rom_in_context.xdc] for cell 'inst_rom_instance'
+Parsing XDC File [c:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/ip/Memory_core/Memory_core/Memory_core_in_context.xdc] for cell 'memory/memcore'
+Finished Parsing XDC File [c:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/ip/Memory_core/Memory_core/Memory_core_in_context.xdc] for cell 'memory/memcore'
+Parsing XDC File [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/nexys_a7.xdc]
+Finished Parsing XDC File [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/nexys_a7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/nexys_a7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arch_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arch_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1200.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1200.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst_rom_instance. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for memory/memcore. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'segnum_manager'
+WARNING: [Synth 8-327] inferring latch for variable 'imm_out_reg' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/ImmDecoder.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'funct_reg' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/util_src/ALUCtrl.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'o_reg' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/ALU.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'inset_position_reg' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.srcs/sources_1/new/Cache.sv:88]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE7 |                             0000 |                         00000000
+*
+                  iSTATE |                             0001 |                         11111110
+                 iSTATE0 |                             0010 |                         11111101
+                 iSTATE1 |                             0011 |                         11111011
+                 iSTATE2 |                             0100 |                         11110111
+                 iSTATE3 |                             0101 |                         11101111
+                 iSTATE4 |                             0110 |                         11011111
+                 iSTATE5 |                             0111 |                         10111111
+                 iSTATE6 |                             1000 |                         01111111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'segnum_manager'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 64    
+	               32 Bit    Registers := 121   
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 35    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 521   
+	   6 Input  128 Bit        Muxes := 65    
+	   4 Input  128 Bit        Muxes := 3     
+	   2 Input   64 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 16    
+	   6 Input   32 Bit        Muxes := 3     
+	   8 Input   32 Bit        Muxes := 1     
+	   4 Input   30 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 148   
+	   6 Input    4 Bit        Muxes := 33    
+	   9 Input    4 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 8     
+	   4 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 5     
+	   5 Input    2 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 260   
+	   6 Input    1 Bit        Muxes := 69    
+	   5 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 2     
+	   9 Input    1 Bit        Muxes := 4     
+	  12 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design Cache__GB1 has port P[7] driven by constant 0
+WARNING: [Synth 8-3917] design Cache__GB1 has port P[4] driven by constant 0
+WARNING: [Synth 8-3917] design Cache__GB1 has port P[3] driven by constant 0
+WARNING: [Synth 8-3917] design Cache__GB1 has port P[2] driven by constant 0
+WARNING: [Synth 8-3917] design Cache__GB1 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design Cache__GB1 has port P[0] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'addr_reg[15][1][31]' (FDCE) to 'addr_reg[15][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[15][1][30]' (FDCE) to 'addr_reg[15][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[15][1][28]' (FDCE) to 'addr_reg[15][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[14][1][31]' (FDCE) to 'addr_reg[14][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[14][1][30]' (FDCE) to 'addr_reg[14][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[14][1][28]' (FDCE) to 'addr_reg[14][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[13][1][31]' (FDCE) to 'addr_reg[13][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[13][1][30]' (FDCE) to 'addr_reg[13][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[13][1][28]' (FDCE) to 'addr_reg[13][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[12][1][31]' (FDCE) to 'addr_reg[12][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[12][1][30]' (FDCE) to 'addr_reg[12][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[12][1][28]' (FDCE) to 'addr_reg[12][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[11][1][31]' (FDCE) to 'addr_reg[11][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[11][1][30]' (FDCE) to 'addr_reg[11][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[11][1][28]' (FDCE) to 'addr_reg[11][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[10][1][31]' (FDCE) to 'addr_reg[10][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[10][1][30]' (FDCE) to 'addr_reg[10][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[10][1][28]' (FDCE) to 'addr_reg[10][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[9][1][31]' (FDCE) to 'addr_reg[9][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[9][1][30]' (FDCE) to 'addr_reg[9][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[9][1][28]' (FDCE) to 'addr_reg[9][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[8][1][31]' (FDCE) to 'addr_reg[8][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[8][1][30]' (FDCE) to 'addr_reg[8][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[8][1][28]' (FDCE) to 'addr_reg[8][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[7][1][31]' (FDCE) to 'addr_reg[7][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[7][1][30]' (FDCE) to 'addr_reg[7][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[7][1][28]' (FDCE) to 'addr_reg[7][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[6][1][31]' (FDCE) to 'addr_reg[6][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[6][1][30]' (FDCE) to 'addr_reg[6][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[6][1][28]' (FDCE) to 'addr_reg[6][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[5][1][31]' (FDCE) to 'addr_reg[5][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[5][1][30]' (FDCE) to 'addr_reg[5][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[5][1][28]' (FDCE) to 'addr_reg[5][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[4][1][31]' (FDCE) to 'addr_reg[4][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[4][1][30]' (FDCE) to 'addr_reg[4][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[4][1][28]' (FDCE) to 'addr_reg[4][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[3][1][31]' (FDCE) to 'addr_reg[3][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[3][1][30]' (FDCE) to 'addr_reg[3][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[3][1][28]' (FDCE) to 'addr_reg[3][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[2][1][31]' (FDCE) to 'addr_reg[2][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[2][1][30]' (FDCE) to 'addr_reg[2][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[2][1][28]' (FDCE) to 'addr_reg[2][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[1][1][31]' (FDCE) to 'addr_reg[1][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[1][1][30]' (FDCE) to 'addr_reg[1][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[1][1][28]' (FDCE) to 'addr_reg[1][1][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[0][1][31]' (FDCE) to 'addr_reg[0][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[0][1][30]' (FDCE) to 'addr_reg[0][1][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[0][1][28]' (FDCE) to 'addr_reg[0][1][29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[15][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[14][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[13][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[12][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[11][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[10][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[9][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[8][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[7][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[6][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[5][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[4][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[3][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[2][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[1][1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[0][1][29] )
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[30]' (FDCE) to 'bram_delay_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[31]' (FDCE) to 'bram_delay_reg[29]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[29]' (FDCE) to 'bram_delay_reg[28]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[28]' (FDCE) to 'bram_delay_reg[27]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[27]' (FDCE) to 'bram_delay_reg[26]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[26]' (FDCE) to 'bram_delay_reg[25]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[25]' (FDCE) to 'bram_delay_reg[24]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[24]' (FDCE) to 'bram_delay_reg[23]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[23]' (FDCE) to 'bram_delay_reg[22]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[22]' (FDCE) to 'bram_delay_reg[21]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[21]' (FDCE) to 'bram_delay_reg[20]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[20]' (FDCE) to 'bram_delay_reg[19]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[19]' (FDCE) to 'bram_delay_reg[18]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[18]' (FDCE) to 'bram_delay_reg[17]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[17]' (FDCE) to 'bram_delay_reg[16]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[16]' (FDCE) to 'bram_delay_reg[15]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[15]' (FDCE) to 'bram_delay_reg[14]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[14]' (FDCE) to 'bram_delay_reg[13]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[13]' (FDCE) to 'bram_delay_reg[12]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[12]' (FDCE) to 'bram_delay_reg[11]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[11]' (FDCE) to 'bram_delay_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[10]' (FDCE) to 'bram_delay_reg[9]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[9]' (FDCE) to 'bram_delay_reg[8]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[8]' (FDCE) to 'bram_delay_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[7]' (FDCE) to 'bram_delay_reg[6]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[6]' (FDCE) to 'bram_delay_reg[5]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[5]' (FDCE) to 'bram_delay_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[4]' (FDCE) to 'bram_delay_reg[3]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[3]' (FDCE) to 'bram_delay_reg[2]'
+INFO: [Synth 8-3886] merging instance 'bram_delay_reg[2]' (FDCE) to 'bram_delay_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bram_delay_reg[1] )
+INFO: [Synth 8-3886] merging instance 'addr_reg[15][3][31]' (FDCE) to 'addr_reg[15][3][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[15][3][30]' (FDCE) to 'addr_reg[15][3][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[15][3][28]' (FDCE) to 'addr_reg[15][3][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[14][3][31]' (FDCE) to 'addr_reg[14][3][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[14][3][30]' (FDCE) to 'addr_reg[14][3][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[14][3][28]' (FDCE) to 'addr_reg[14][3][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[13][3][31]' (FDCE) to 'addr_reg[13][3][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[13][3][30]' (FDCE) to 'addr_reg[13][3][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[13][3][28]' (FDCE) to 'addr_reg[13][3][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[12][3][31]' (FDCE) to 'addr_reg[12][3][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[12][3][30]' (FDCE) to 'addr_reg[12][3][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[12][3][28]' (FDCE) to 'addr_reg[12][3][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[11][3][31]' (FDCE) to 'addr_reg[11][3][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[11][3][30]' (FDCE) to 'addr_reg[11][3][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[11][3][28]' (FDCE) to 'addr_reg[11][3][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[10][3][31]' (FDCE) to 'addr_reg[10][3][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[10][3][30]' (FDCE) to 'addr_reg[10][3][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[10][3][28]' (FDCE) to 'addr_reg[10][3][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[9][3][31]' (FDCE) to 'addr_reg[9][3][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[9][3][30]' (FDCE) to 'addr_reg[9][3][28]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[9][3][28]' (FDCE) to 'addr_reg[9][3][29]'
+INFO: [Synth 8-3886] merging instance 'addr_reg[8][3][31]' (FDCE) to 'addr_reg[8][3][28]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[15][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[14][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[13][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[12][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[11][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[10][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[9][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[8][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[7][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[6][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[5][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[4][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[3][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[2][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[1][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[0][3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[15][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[14][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[13][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[12][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[11][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[10][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[9][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[8][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[7][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[6][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[5][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[4][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[3][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[2][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[1][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[0][2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[15][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[14][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[13][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[12][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[11][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[10][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[9][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[8][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[7][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[6][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[5][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[4][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[3][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[2][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[1][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[0][0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mem_wait_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\state_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:01:36 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:34 ; elapsed = 00:01:45 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:44 ; elapsed = 00:01:54 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:52 ; elapsed = 00:02:03 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:58 ; elapsed = 00:02:09 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:58 ; elapsed = 00:02:09 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |inst_rom      |         1|
+|2     |Memory_core   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |Memory_core |     1|
+|2     |inst_rom    |     1|
+|3     |BUFG        |     5|
+|4     |CARRY4      |    93|
+|5     |LUT1        |    39|
+|6     |LUT2        |   277|
+|7     |LUT3        |   462|
+|8     |LUT4        |   301|
+|9     |LUT5        |   674|
+|10    |LUT6        |  7926|
+|11    |MUXF7       |  2834|
+|12    |MUXF8       |  1316|
+|13    |FDCE        | 11882|
+|14    |FDPE        |    30|
+|15    |FDRE        |   145|
+|16    |FDSE        |     1|
+|17    |LD          |    74|
+|18    |IBUF        |    19|
+|19    |OBUF        |    38|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:02 ; elapsed = 00:02:12 . Memory (MB): peak = 1200.910 ; gain = 190.898
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:42 ; elapsed = 00:02:03 . Memory (MB): peak = 1200.910 ; gain = 17.438
+Synthesis Optimization Complete : Time (s): cpu = 00:02:02 ; elapsed = 00:02:13 . Memory (MB): peak = 1200.910 ; gain = 190.898
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.367 . Memory (MB): peak = 1200.910 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4317 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1200.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 74 instances were transformed.
+  LD => LDCE: 74 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+250 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:13 ; elapsed = 00:02:34 . Memory (MB): peak = 1200.910 ; gain = 190.898
+INFO: [Common 17-1381] The checkpoint 'C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.runs/synth_1/arch_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file arch_top_utilization_synth.rpt -pb arch_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  7 17:36:08 2021...

@@ -1,0 +1,86 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.sim/sim_1/synth/func/xsim/CPU_test_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-311] analyzing module ADD_2
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module ALUCtrl
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-311] analyzing module Decoder
+INFO: [VRFC 10-311] analyzing module EX_MEM_REG
+INFO: [VRFC 10-311] analyzing module ID_EX_REG
+INFO: [VRFC 10-311] analyzing module IF_ID_REG
+INFO: [VRFC 10-311] analyzing module ImmDecoder
+INFO: [VRFC 10-311] analyzing module MEM_WB_REG
+INFO: [VRFC 10-311] analyzing module MUX2T1_32
+INFO: [VRFC 10-311] analyzing module MUX4T1_32
+INFO: [VRFC 10-311] analyzing module MUX4T1_32_1
+INFO: [VRFC 10-311] analyzing module PPL_RV32I
+INFO: [VRFC 10-311] analyzing module REG32
+INFO: [VRFC 10-311] analyzing module Reg_
+INFO: [VRFC 10-311] analyzing module arch_top
+INFO: [VRFC 10-311] analyzing module button_debouncer
+INFO: [VRFC 10-311] analyzing module button_debouncer_0
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-311] analyzing module io_manager
+INFO: [VRFC 10-311] analyzing module segnum_manager
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dist_mem_gen_v8_0_13
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dist_mem_gen_v8_0_13_synth
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_spram
+INFO: [VRFC 10-311] analyzing module inst_rom_dist_mem_gen_v8_0_13
+INFO: [VRFC 10-311] analyzing module inst_rom_dist_mem_gen_v8_0_13_synth
+INFO: [VRFC 10-311] analyzing module inst_rom_rom
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/util_src/ADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ADD' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/util_src/ADD.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ALU' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/ALU.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/util_src/ALUCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtrl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ALUCtrl' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/util_src/ALUCtrl.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/util_src/ImmDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmDecoder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ImmDecoder' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/util_src/ImmDecoder.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/util_src/MUX2T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2T1_32
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'MUX2T1_32' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/util_src/MUX2T1_32.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/MUX4T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4T1_32
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'MUX4T1_32' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/MUX4T1_32.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/util_src/PCCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/util_src/REG32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG32
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'REG32' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/util_src/REG32.v:23]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/ALUOut_SHIFT.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUOut_SHIFT
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/Datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Datapath' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/Datapath.sv:32]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/Decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Decoder' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/Decoder.sv:23]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/EX_MEM_REG.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM_REG
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'EX_MEM_REG' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/EX_MEM_REG.sv:23]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/HazardDetector.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HazardDetector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/ID_EX_REG.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX_REG
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ID_EX_REG' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/ID_EX_REG.sv:23]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/IF_ID_REG.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID_REG
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'IF_ID_REG' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/IF_ID_REG.sv:23]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/MEM_WB_REG.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_REG
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'MEM_WB_REG' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/MEM_WB_REG.sv:23]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/PPL_RV32I.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PPL_RV32I
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'PPL_RV32I' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/PPL_RV32I.sv:23]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/Reg_.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Reg_' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/Reg_.sv:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sim_1/new/CPU_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_test

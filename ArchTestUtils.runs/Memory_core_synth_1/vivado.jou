@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan  7 16:06:30 2021
+# Process ID: 17640
+# Current directory: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.runs/Memory_core_synth_1
+# Command line: vivado.exe -log Memory_core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Memory_core.tcl
+# Log file: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.runs/Memory_core_synth_1/Memory_core.vds
+# Journal file: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.runs/Memory_core_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Memory_core.tcl -notrace

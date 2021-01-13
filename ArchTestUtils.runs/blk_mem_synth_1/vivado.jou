@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Dec 13 14:42:56 2020
+# Process ID: 21128
+# Current directory: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.runs/blk_mem_synth_1
+# Command line: vivado.exe -log blk_mem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem.tcl
+# Log file: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.runs/blk_mem_synth_1/blk_mem.vds
+# Journal file: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.runs/blk_mem_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem.tcl -notrace

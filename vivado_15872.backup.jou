@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan  7 11:07:39 2021
+# Process ID: 15872
+# Current directory: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15224 C:\Cyanbox\curriculum\arch\RISC-V_lab\PPL_CACHE_PLUS_changesize\ArchTestUtils.xpr
+# Log file: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/vivado.log
+# Journal file: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/impl_1/arch_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/impl_1/arch_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_run impl_1
+launch_simulation
+open_wave_config C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/CPU_test_behav.wcfg
+source CPU_test.tcl
+update_compile_order -fileset sources_1
+run 300 us
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/CPU_test_behav.wcfg
+source CPU_test.tcl
+run 300 us
+current_wave_config {CPU_test_behav.wcfg}
+add_wave {{/CPU_test/uut/datapath/d_cache/addr}} 
+restart
+run 300 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/impl_1/arch_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize/ArchTestUtils.runs/impl_1/arch_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_design
+close_sim

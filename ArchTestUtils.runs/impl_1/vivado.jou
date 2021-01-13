@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan  7 17:36:18 2021
+# Process ID: 8692
+# Current directory: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.runs/impl_1
+# Command line: vivado.exe -log arch_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source arch_top.tcl -notrace
+# Log file: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.runs/impl_1/arch_top.vdi
+# Journal file: C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL_CACHE_PLUS_changesize_stage2/ArchTestUtils.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source arch_top.tcl -notrace

@@ -1,0 +1,2 @@
+MemoryCore.v,verilog,xil_defaultlib,../../../../ArchTestUtils.srcs/sources_1/ip/MemoryCore/sim/MemoryCore.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

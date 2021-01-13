@@ -1,0 +1,35 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ArchTestUtils.srcs/sources_1/ip/Memory_core/sim/Memory_core.v" \
+"../../../../ArchTestUtils.srcs/sources_1/ip/inst_rom/sim/inst_rom.v" \
+"../../../../util_src/ADD.v" \
+"../../../../ArchTestUtils.srcs/sources_1/new/ALU.v" \
+"../../../../util_src/ALUCtrl.v" \
+"../../../../util_src/ImmDecoder.v" \
+"../../../../util_src/MUX2T1_32.v" \
+"../../../../ArchTestUtils.srcs/sources_1/new/MUX4T1_32.v" \
+"../../../../util_src/PCCtrl.v" \
+"../../../../util_src/REG32.v" \
+
+sv xil_defaultlib  \
+"../../../../ArchTestUtils.srcs/sources_1/new/ALUOut_SHIFT.sv" \
+"../../../../ArchTestUtils.srcs/sources_1/new/Cache.sv" \
+"../../../../ArchTestUtils.srcs/sources_1/new/Datapath.sv" \
+"../../../../ArchTestUtils.srcs/sources_1/new/Decoder.sv" \
+"../../../../ArchTestUtils.srcs/sources_1/new/EX_MEM_REG.sv" \
+"../../../../ArchTestUtils.srcs/sources_1/new/HazardDetector.sv" \
+"../../../../ArchTestUtils.srcs/sources_1/new/ID_EX_REG.sv" \
+"../../../../ArchTestUtils.srcs/sources_1/new/IF_ID_REG.sv" \
+"../../../../ArchTestUtils.srcs/sources_1/new/LatencyMemoryVon.sv" \
+"../../../../ArchTestUtils.srcs/sources_1/new/MEM_WB_REG.sv" \
+"../../../../ArchTestUtils.srcs/sources_1/new/PPL_RV32I.sv" \
+"../../../../ArchTestUtils.srcs/sources_1/new/Reg_.sv" \
+
+verilog xil_defaultlib  \
+"../../../../ArchTestUtils.srcs/sim_1/new/CPU_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

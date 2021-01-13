@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="CPU_test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="CPU_test" />
+            <top_module name="\$unit_ALUOut_SHIFT_sv " />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="6498600fs"></ZoomStartTime>
+      <ZoomEndTime time="8968601fs"></ZoomEndTime>
+      <Cursor1Time time="7318600fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="220"></NameColumnWidth>
+      <ValueColumnWidth column_width="77"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="40" />
+   <wvobject fp_name="/CPU_test/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/Inst" type="array">
+      <obj_property name="ElementShortName">Inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/reg_content" type="array">
+      <obj_property name="ElementShortName">reg_content[31:1][31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_content[31:1][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/data_address" type="array">
+      <obj_property name="ElementShortName">data_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/Inst_Addr" type="array">
+      <obj_property name="ElementShortName">Inst_Addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Inst_Addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/stall_num_out" type="array">
+      <obj_property name="ElementShortName">stall_num_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">stall_num_out[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/test_state" type="array">
+      <obj_property name="ElementShortName">test_state[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_state[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/mem_req_addr" type="array">
+      <obj_property name="ElementShortName">mem_req_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_req_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/mem_req_data" type="array">
+      <obj_property name="ElementShortName">mem_req_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_req_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/mem_req_wen" type="logic">
+      <obj_property name="ElementShortName">mem_req_wen</obj_property>
+      <obj_property name="ObjectShortName">mem_req_wen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/mem_req_valid" type="logic">
+      <obj_property name="ElementShortName">mem_req_valid</obj_property>
+      <obj_property name="ObjectShortName">mem_req_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/mem_resp_data" type="array">
+      <obj_property name="ElementShortName">mem_resp_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_resp_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/mem_clk" type="logic">
+      <obj_property name="ElementShortName">mem_clk</obj_property>
+      <obj_property name="ObjectShortName">mem_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/rom_resp_inst" type="array">
+      <obj_property name="ElementShortName">rom_resp_inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rom_resp_inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/rom_resp_valid" type="logic">
+      <obj_property name="ElementShortName">rom_resp_valid</obj_property>
+      <obj_property name="ObjectShortName">rom_resp_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/cache_req_addr" type="array">
+      <obj_property name="ElementShortName">cache_req_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_req_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/cache_req_data" type="array">
+      <obj_property name="ElementShortName">cache_req_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_req_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/cache_req_wen" type="logic">
+      <obj_property name="ElementShortName">cache_req_wen</obj_property>
+      <obj_property name="ObjectShortName">cache_req_wen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/cache_req_valid" type="logic">
+      <obj_property name="ElementShortName">cache_req_valid</obj_property>
+      <obj_property name="ObjectShortName">cache_req_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/cache_req_index" type="array">
+      <obj_property name="ElementShortName">cache_req_index[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_req_index[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/cache_resp_data" type="array">
+      <obj_property name="ElementShortName">cache_resp_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_resp_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/cache_resp_stall" type="logic">
+      <obj_property name="ElementShortName">cache_resp_stall</obj_property>
+      <obj_property name="ObjectShortName">cache_resp_stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/state" type="array">
+      <obj_property name="ElementShortName">state[31:0]</obj_property>
+      <obj_property name="ObjectShortName">state[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/mem_req_addr" type="array">
+      <obj_property name="ElementShortName">mem_req_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_req_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/mem_req_data" type="array">
+      <obj_property name="ElementShortName">mem_req_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_req_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/mem_req_wen" type="logic">
+      <obj_property name="ElementShortName">mem_req_wen</obj_property>
+      <obj_property name="ObjectShortName">mem_req_wen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/mem_req_valid" type="logic">
+      <obj_property name="ElementShortName">mem_req_valid</obj_property>
+      <obj_property name="ObjectShortName">mem_req_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/mem_resp_data" type="array">
+      <obj_property name="ElementShortName">mem_resp_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_resp_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/mem_clk" type="logic">
+      <obj_property name="ElementShortName">mem_clk</obj_property>
+      <obj_property name="ObjectShortName">mem_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/hit" type="logic">
+      <obj_property name="ElementShortName">hit</obj_property>
+      <obj_property name="ObjectShortName">hit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/inset_position" type="array">
+      <obj_property name="ElementShortName">inset_position[1:0]</obj_property>
+      <obj_property name="ObjectShortName">inset_position[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/rand_position" type="array">
+      <obj_property name="ElementShortName">rand_position[1:0]</obj_property>
+      <obj_property name="ObjectShortName">rand_position[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/allocate_position" type="array">
+      <obj_property name="ElementShortName">allocate_position[1:0]</obj_property>
+      <obj_property name="ObjectShortName">allocate_position[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/sample_mem_clk" type="array">
+      <obj_property name="ElementShortName">sample_mem_clk[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_mem_clk[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/posedge_mem_clk" type="logic">
+      <obj_property name="ElementShortName">posedge_mem_clk</obj_property>
+      <obj_property name="ObjectShortName">posedge_mem_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/word_in_data_pos" type="array">
+      <obj_property name="ElementShortName">word_in_data_pos[1:0]</obj_property>
+      <obj_property name="ObjectShortName">word_in_data_pos[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_test/uut/datapath/d_cache/data" type="array">
+      <obj_property name="ElementShortName">data[31:0][3:0][127:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0][3:0][127:0]</obj_property>
+   </wvobject>
+</wave_config>

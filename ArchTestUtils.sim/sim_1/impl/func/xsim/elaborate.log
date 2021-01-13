@@ -1,0 +1,47 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9ba771ba79e34d5b8bd8126aade9e197 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot CPU_test_func_impl xil_defaultlib.CPU_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'rd_out' [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sources_1/new/Datapath.sv:202]
+WARNING: [VRFC 10-5021] port 'lopt' is not connected on this instance [C:/Cyanbox/curriculum/arch/RISC-V_lab/PPL/ArchTestUtils.srcs/sim_1/new/CPU_test.v:72]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_ALUOut_SHIFT_sv
+Compiling module xil_defaultlib.MUX4T1_32
+Compiling module xil_defaultlib.REG32
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.IF_ID_REG
+Compiling module xil_defaultlib.Reg_
+Compiling module xil_defaultlib.ImmDecoder
+Compiling module xil_defaultlib.ALUCtrl
+Compiling module xil_defaultlib.Decoder
+Compiling module xil_defaultlib.ID_EX_REG
+Compiling module xil_defaultlib.MUX2T1_32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_MEM_REG
+Compiling module xil_defaultlib.PCCtrl
+Compiling module xil_defaultlib.ALUOut_SHIFT
+Compiling module xil_defaultlib.MEM_WB_REG
+Compiling module xil_defaultlib.HazardDetector
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.PPL_RV32I
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT6
+Compiling module xil_defaultlib.inst_rom_rom
+Compiling module xil_defaultlib.inst_rom_dist_mem_gen_v8_0_13_sy...
+Compiling module xil_defaultlib.inst_rom_dist_mem_gen_v8_0_13
+Compiling module xil_defaultlib.inst_rom
+Compiling module unisims_ver.RAM256X1S(IS_WCLK_INVERTED=1'b1)
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module xil_defaultlib.dist_mem_gen_0__spram
+Compiling module xil_defaultlib.dist_mem_gen_0__dist_mem_gen_v8_...
+Compiling module xil_defaultlib.dist_mem_gen_0__dist_mem_gen_v8_...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.CPU_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_test_func_impl
